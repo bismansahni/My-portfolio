@@ -7,6 +7,7 @@ import mongologo from './images/mongologo.png';
 import pythonlogo from './images/pythonlogo.png';
 
 import './App.css';
+ import './style/Skill.css'
 
 function Skills() {
     return (

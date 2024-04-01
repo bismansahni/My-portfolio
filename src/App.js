@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+// import './style/Navbar.css'
 import Navbar from './Navbar';
 import Skills from './Skill';
 import About from './About';
