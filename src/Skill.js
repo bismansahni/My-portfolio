@@ -3,7 +3,7 @@
 import React from 'react';
 import awsLogo from './images/awslogo.png';
 import sqllogo from './images/sqllogo.png';
-
+import mongologo from './images/mongologo.png';
 
 import './App.css';
 
@@ -18,6 +18,8 @@ function Skills() {
 
             <img src={sqllogo} alt="sql" className="skill-icon" />
             <div className="skill-name">sql</div>
+            <img src={mongologo} alt="mongodb" className="skill-icon" />
+            <div className="skill-name">mongodb</div>
           </div>
           {/* Repeat for other skill cards */}
         </div>
