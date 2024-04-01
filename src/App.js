@@ -2,10 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
 import Skills from './Skill';
+import About from './About';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <About/>
        <Navbar/>
        <Skills/>
 
