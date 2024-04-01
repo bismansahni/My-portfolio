@@ -19,7 +19,7 @@ function Skills() {
             <img src={sqllogo} alt="sql" className="skill-icon" />
             <div className="skill-name">sql</div>
             <img src={mongologo} alt="mongodb" className="skill-icon" />
-            <div className="skill-name">mongodb</div>
+            <div className="skill-name">hello</div>
           </div>
           {/* Repeat for other skill cards */}
         </div>
