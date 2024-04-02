@@ -13,6 +13,7 @@
     justify-content: start;
     padding: 10px 20px; /* Add padding on the sides if needed */
     background-color: var(--background-color);
+    top:-30px;
   }
   /* Center the title within the header */
   .terminal-title {
@@ -34,6 +35,10 @@
     display: flex;
     gap: 8px;
     margin-right: 16px; /* Space between buttons and title */
+    position: absolute;
+  top: 50%;
+  left: 10px; /* Adjust this value to place the buttons to the left */
+  transform: translateY(-50%);
   }
   
   /* Ensure list items have enough space and are not cut off */
