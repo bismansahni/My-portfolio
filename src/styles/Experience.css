@@ -116,3 +116,31 @@
     right: 0;
     bottom: -10px; /* Adjust to place the line right below the header */
   }
+
+
+  /* Adjust styles for experience entries */
+.experience-entry {
+  position: relative; /* To position the pseudo-elements */
+  padding-left: 20px; /* Add some space for pseudo-elements */
+  /* ... other existing styles ... */
+}
+
+/* Use pseudo-elements for custom bullets */
+.experience-entry h3::before {
+  content: '$'; /* Pink dollar sign */
+  color: var(--muted-pink);
+  position: absolute;
+  left: 0;
+}
+
+.experience-entry ul {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Align with the title */
+}
+
+.experience-entry ul li::before {
+  content: '-->'; /* Arrow bullet point */
+  color: var(--text-color);
+  padding-right: 10px; /* Space between bullet and text */
+}
