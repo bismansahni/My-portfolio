@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./styles/Experience.css";
 
 const experiences = [
   {
@@ -40,37 +40,31 @@ const experiences = [
   },
 ];
 
-function Experience() {
 
-  
-    return (
-      <div className="terminal">
-        <div className="experience-section">
-          <div className="terminal-header">
-            <div className="terminal-controls">
-              <div className="terminal-button close"></div>
-              <div className="terminal-button minimize"></div>
-              <div className="terminal-button maximize"></div>
-            </div>
-            <h2 className="terminal-title">Experience</h2>
-          </div>
-          <section className="experience-section">
-            <h2 className="experience-title">Experience</h2>
-            {experiences.map((exp, index) => (
-              <div key={index} className="experience-entry">
-                <h3 className="experience-role">{exp.title}</h3>
-                <p className="experience-period">{exp.period}</p>
-                <ul className="experience-responsibilities">
-                  {exp.responsibilities.map((item, itemIndex) => (
-                    <li key={itemIndex}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </section>
+function Experience() {
+  return (
+    <div className="experience-section terminal-container">
+      <div className="terminal-header">
+        <div className="terminal-controls">
+          <div className="terminal-button close"></div>
+          <div className="terminal-button minimize"></div>
+          <div className="terminal-button maximize"></div>
         </div>
+        <h2 className="terminal-title">Experience</h2>
       </div>
-    );
-  }
-  
-  export default Experience;
+      {experiences.map((exp, index) => (
+        <div key={index} className="experience-entry">
+          <h3>{exp.title}</h3>
+          <time>{exp.period}</time>
+          <ul>
+            {exp.responsibilities.map((item, itemIndex) => (
+              <li key={itemIndex}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default Experience;

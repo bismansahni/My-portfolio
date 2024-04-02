@@ -1,22 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fira+Code:wght@400;700&display=swap');
-
 :root {
-  --bright-orange: #54494B;
-  --light-orange: #F1F7ED;
-  --muted-pink: #91C7B1;
-  --pale-peach: #006699;
-  --light-gray: #FFFFFF; /* Corrected to valid HEX color */
-  --cream: #E3D081;
+  --background-color: #1e1e1e; /* Adjusted to a common terminal background */
+  --text-color: #d4d4d4; /* Adjusted to a common terminal text color */
+
+  /* VS Code colors */
+  --blue: #569cd6;
+  --green: #4ec9b0;
+  --orange: #ce9178;
+  --purple: #c586c0;
+  --red: #f44747;
   --font-primary: 'Roboto', sans-serif;
   --font-secondary: 'Fira Code', monospace;
 }
 
-body {
-  font-family: var(--font-primary);
-  text-align: center;
-  background-color: var(--pale-peach);
-  color: var(--light-gray);
+/* Apply base styles for body to inherit in all components */
+body, .education-section, .experience-section, .projects-section, .skills-section {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-secondary);
 }
+
+/* Update the colors of headings, text, links, etc. */
+h1, h2, h3, h4, h5, h6, p, a, button {
+  color: var(--green); /* This will apply the green color similar to the terminal */
+}
+
+/* For interactive elements, you can specify different states like hover */
+a:hover, button:hover {
+  color: var(--blue); /* Hover state with a VS Code blue */
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -121,125 +133,69 @@ html {
 /* Other specific project, skill, education, and experience styles remain as previously defined */
 
 .skills-section {
-  padding: 20px;
-  text-align: center;
-  background-color: var(--light-orange); /* or any other color you want */
-}
-
-.skills-title {
-  color: var(#000000); /* This should be a color that contrasts well with the background */
-  margin-bottom: 20px;
+  /* Other styles remain the same */
 }
 
 .skills-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center the skill-cards in the container */
+  flex-direction: row; /* Aligns items in a row instead of a column */
+  flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+  justify-content: center; /* Centers items on the main axis */
+  align-items: center; /* Aligns items on the cross axis */
   gap: 20px; /* This is the space between the skill-cards */
+  margin: 0 auto; /* Centers the container if it's not as wide as the parent */
 }
 
 .skill-card {
-  border-radius: 10px;
-  padding: 1rem; /* Adjust padding to control the space around the icon inside the card */
-  margin: 0.5rem; /* This will add space between the cards themselves */
-  width: 120px; /* Control the width of the card */
-  height: 120px; /* Control the height of the card */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--light-orange); 
-  border: 2px solid var(--muted-pink); /* Border color for the card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
-  transform: translateY(20px); /* Start the card a bit lower */
-   /* Start the card transparent */
-  animation: fadeInUp 0.8s ease forwards; /* Animation to control the fade-in and move up effect */
+  /* Flex item alignment and sizing styles remain the same */
+  /* Adjust margins if needed */
+  margin: 10px; /* Adds a little space around each card */
 }
 
-.skill-icon {
-  max-width: 100%;
-  height: auto;
+/* Additional responsive styling if needed */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+  }
 }
 
 
-.experience-section {
-  background-color: #0D0208; /* Very dark background similar to old terminals */
-  color: #33C484; /* Green text color similar to terminal displays */
-  font-family: 'Fira Code', monospace; /* Monospaced font for authenticity */
-  padding: 40px;
-  text-align: left;
-  border-radius: 5px; /* Optional: for a slight curve on the edges */
+.terminal-container {
+  padding: 1.5em; /* Responsive padding */
+  /* ... */
 }
 
-.experience-title {
-  color: #33C484; /* Same green color for the title */
-  border-bottom: 1px solid #33C484; /* Underline for the title */
-  padding-bottom: 10px;
-  margin-bottom: 30px;
+.experience-entry h3, .experience-entry time, .experience-entry ul {
+  font-size: 1em; /* Smaller, more readable font size */
+  line-height: 1.5; /* Space out lines for readability */
 }
 
-.experience-entry {
-  background-color: transparent; /* No different background for entry */
-  margin-bottom: 20px;
+.experience-entry h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em; /* Space between title and content */
 }
 
-.experience-role {
-  color: #33C484;
-  margin: 10px 0;
+.experience-entry time {
+  font-size: 0.85em; /* Smaller font size for dates */
+  margin-bottom: 1em; /* Space between date and responsibilities */
 }
 
-.experience-period {
-  color: #33C484;
-  font-style: italic;
-}
-
-.experience-responsibilities {
-  list-style-type: '>'; /* Styled bullet point similar to terminal arrow */
-  margin-left: 20px;
-  padding: 0;
-}
-
-.experience-responsibilities li {
-  color: #33C484; /* Ensuring the text color is consistent */
-  margin-bottom: 5px;
-  /* No background change for list items, transparent to match the terminal background */
-}
-
-
-.terminal-header {
-  display: flex;
-  align-items: center;
-  padding: 8px;
-  background-color: #0D0208; /* Match terminal background */
-}
-
-.terminal-controls {
-  display: flex;
-  gap: 8px;
-  margin-right: 16px;
-}
-
-.terminal-button {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1px currentColor inset;
-}
-
-.terminal-button.close {
-  background-color: #FF605C;
-}
-
-.terminal-button.minimize {
-  background-color: #FFBD44;
-}
-
-.terminal-button.maximize {
-  background-color: #00CA4E;
+.experience-entry ul {
+  padding-left: 1.5em; /* Indent for bullet points */
 }
 
 .terminal-title {
-  flex-grow: 1;
-  text-align: center;
-  color: #33C484; /* Terminal text color */
-  font-family: 'Fira Code', monospace;
+  font-size: 1.2em; /* Ensures title is readable but not too large */
+  /* Remove transform and absolute positioning if it disrupts the layout */
+}
+
+/* Add media query for smaller screens to adjust font sizes */
+@media (max-width: 768px) {
+  .experience-entry h3, .experience-entry time, .experience-entry ul {
+    font-size: 0.9em; /* Slightly smaller font sizes on mobile */
+  }
+
+  .terminal-title {
+    font-size: 1em; /* Adjust title size for mobile */
+  }
 }
