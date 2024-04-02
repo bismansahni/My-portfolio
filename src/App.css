@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fira+Code:wght@400;700&display=swap');
+
 :root {
-  --bright-orange: #FF9F1C;
-  --light-orange: #FFBF69;
-  --muted-pink: #CB997E;
-  --pale-peach: #DDBEA9;
-  --light-gray: #E2E2E2;
-  --cream: #E07A5F;
+  --bright-orange: #54494B;
+  --light-orange: #F1F7ED;
+  --muted-pink: #91C7B1;
+  --pale-peach: #006699;
+  --light-gray: #FFFFFF; /* Corrected to valid HEX color */
+  --cream: #E3D081;
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Fira Code', monospace;
 }
 
-.App {
+body {
+  font-family: var(--font-primary);
   text-align: center;
   background-color: var(--pale-peach);
   color: var(--light-gray);
@@ -32,6 +37,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: var(--light-gray); /* Ensure text color is defined for contrast */
 }
 
 .App-link {
@@ -54,4 +60,186 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.about-photo {
+  width: 150px;
+  height: auto;
+  border-radius: 75px;
+  margin-right: 10px;
+}
+
+.education-section, .experience-section, .projects-section, .skills-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--light-gray);
+  color: var(--bright-orange); /* Adjusted for visibility */
+  border-radius: 10px; /* Consistency in card design */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.education-entry, .experience-entry, .project-card, .skill-card {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.education-entry img, .experience-entry img, .project-card img, .skill-card img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--cream);
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-link {
+  color: var(--light-gray);
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--muted-pink);
+}
+
+/* Other specific project, skill, education, and experience styles remain as previously defined */
+
+.skills-section {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--light-orange); /* or any other color you want */
+}
+
+.skills-title {
+  color: var(#000000); /* This should be a color that contrasts well with the background */
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the skill-cards in the container */
+  gap: 20px; /* This is the space between the skill-cards */
+}
+
+.skill-card {
+  border-radius: 10px;
+  padding: 1rem; /* Adjust padding to control the space around the icon inside the card */
+  margin: 0.5rem; /* This will add space between the cards themselves */
+  width: 120px; /* Control the width of the card */
+  height: 120px; /* Control the height of the card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-orange); 
+  border: 2px solid var(--muted-pink); /* Border color for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  transform: translateY(20px); /* Start the card a bit lower */
+   /* Start the card transparent */
+  animation: fadeInUp 0.8s ease forwards; /* Animation to control the fade-in and move up effect */
+}
+
+.skill-icon {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.experience-section {
+  background-color: #0D0208; /* Very dark background similar to old terminals */
+  color: #33C484; /* Green text color similar to terminal displays */
+  font-family: 'Fira Code', monospace; /* Monospaced font for authenticity */
+  padding: 40px;
+  text-align: left;
+  border-radius: 5px; /* Optional: for a slight curve on the edges */
+}
+
+.experience-title {
+  color: #33C484; /* Same green color for the title */
+  border-bottom: 1px solid #33C484; /* Underline for the title */
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.experience-entry {
+  background-color: transparent; /* No different background for entry */
+  margin-bottom: 20px;
+}
+
+.experience-role {
+  color: #33C484;
+  margin: 10px 0;
+}
+
+.experience-period {
+  color: #33C484;
+  font-style: italic;
+}
+
+.experience-responsibilities {
+  list-style-type: '>'; /* Styled bullet point similar to terminal arrow */
+  margin-left: 20px;
+  padding: 0;
+}
+
+.experience-responsibilities li {
+  color: #33C484; /* Ensuring the text color is consistent */
+  margin-bottom: 5px;
+  /* No background change for list items, transparent to match the terminal background */
+}
+
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: #0D0208; /* Match terminal background */
+}
+
+.terminal-controls {
+  display: flex;
+  gap: 8px;
+  margin-right: 16px;
+}
+
+.terminal-button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px currentColor inset;
+}
+
+.terminal-button.close {
+  background-color: #FF605C;
+}
+
+.terminal-button.minimize {
+  background-color: #FFBD44;
+}
+
+.terminal-button.maximize {
+  background-color: #00CA4E;
+}
+
+.terminal-title {
+  flex-grow: 1;
+  text-align: center;
+  color: #33C484; /* Terminal text color */
+  font-family: 'Fira Code', monospace;
 }

@@ -6,8 +6,7 @@ import pythonlogo from './images/pythonlogo.png';
 import javalogo from './images/javalogo.png';
 import clogo from './images/clogo.png';
 import unitylogo from './images/unitylogo.png';
-import './App.css';
-import './style/Skill.css';
+
 
 function Skills() {
     return (

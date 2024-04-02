@@ -1,5 +1,5 @@
 import React from 'react';
-import './style/Education.css';
+
 import ASUlogo from './images/ASUlogo.png'; // Ensure the path to your image is correct
 
 const Education = () => {

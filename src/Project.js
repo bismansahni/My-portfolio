@@ -1,5 +1,5 @@
 import React from 'react';
-import './style/Project.css' // Make sure to create this CSS file
+
 
 const projects = [
   {

@@ -1,6 +1,6 @@
 import React from 'react';
 import bismanphoto from './images/bismanphoto.jpg'; // Adjust the path to where your image is located
-import './style/About.css';
+// import './style/About.css';
 function About() {
     return (
         <div>
