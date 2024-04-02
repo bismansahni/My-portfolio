@@ -40,15 +40,15 @@ const experiences = [
   },
 ];
 
-
 function Experience() {
   return (
     <div className="experience-section terminal-container">
       <div className="terminal-header">
         <div className="terminal-controls">
-          <div className="terminal-button close"></div>
-          <div className="terminal-button minimize"></div>
-          <div className="terminal-button maximize"></div>
+          {/* Your button components */}
+          <span className="terminal-button close"></span>
+          <span className="terminal-button minimize"></span>
+          <span className="terminal-button maximize"></span>
         </div>
         <h2 className="terminal-title">Experience</h2>
       </div>
@@ -58,7 +58,7 @@ function Experience() {
           <time>{exp.period}</time>
           <ul>
             {exp.responsibilities.map((item, itemIndex) => (
-              <li key={itemIndex}>{item}</li>
+              <li key={itemIndex}><span className="dollar-sign">$</span>{item}</li>
             ))}
           </ul>
         </div>
@@ -66,5 +66,6 @@ function Experience() {
     </div>
   );
 }
+
 
 export default Experience;
