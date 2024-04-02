@@ -4,7 +4,8 @@ import sqllogo from './images/sqllogo.png';
 import mongologo from './images/mongologo.png';
 import pythonlogo from './images/pythonlogo.png';
 import javalogo from './images/javalogo.png';
-import clogo from './images/clogo.png'
+import clogo from './images/clogo.png';
+import unitylogo from './images/unitylogo.png';
 import './App.css';
 import './style/Skill.css';
 
@@ -30,9 +31,13 @@ function Skills() {
                     <img src={javalogo} alt="Java" className="skill-icon" />
                 </div>
                 <div className="skill-card">
-                    <img src={clogo} alt="C" className="skill-icon" />
+                    <img src={clogo} alt="C Language" className="skill-icon" />
+                </div>
+                <div className="skill-card">
+                    <img src={unitylogo} alt="Unity" className="skill-icon" />
+                </div>
+                {/* Add more skill-cards as needed */}
             </div>
-        </div>
         </div>
     );
 }
