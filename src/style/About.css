@@ -1,0 +1,6 @@
+.about-photo {
+    width: 150px; /* or any size you prefer */
+    height: auto;
+    border-radius: 75px; /* circular image */
+    margin-right: 10px;
+}
