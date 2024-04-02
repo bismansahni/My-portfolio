@@ -1,26 +1,18 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-// import './style/Navbar.css'
 import Navbar from './Navbar';
-import Skills from './Skill';
+import Skills from './Skill'; // Make sure this is the correct import
 import About from './About';
+import Education from './Education';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <About/>
-       <Navbar/>
-       <Skills/>
-
-      
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {/* Learn React */}
-        </a>
+        <About />
+        <Navbar />
+        <div id="education"><Education /></div>
+        <div id="skills"><Skills /></div>
       </header>
     </div>
   );

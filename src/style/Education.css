@@ -1,0 +1,35 @@
+.education-section {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .education-entry {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust the space between the image and the text */
+  }
+  
+  .education-entry img {
+    width: 100px; /* Or the size you want */
+    height: auto;
+    border-radius: 5px; /* Optional: if you want rounded corners */
+  }
+  
+  .education-entry h3 {
+    margin-top: 0;
+  }
+  
+  .education-degree {
+    font-style: italic;
+  }
+  
+  .education-year {
+    color: #555;
+  }
+  
+  .education-details {
+    list-style-type: square;
+    margin-left: 20px;
+  }
+  
