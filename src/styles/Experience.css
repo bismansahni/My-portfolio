@@ -7,26 +7,33 @@
   
   /* Header with a pseudo-element to simulate the macOS window controls */
   .terminal-header {
-    position: relative;
-    padding: 4px 20px; /* Provide padding on both sides */
-    text-align: center; /* Center the title text */
-    /* ... existing styles ... */
+    position: relative; /* Keeps children absolutely positioned relative to this container */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 20px; /* Add padding on the sides if needed */
+    background-color: var(--background-color);
   }
-  
   /* Center the title within the header */
   .terminal-title {
-    /* Remove absolute positioning and transform */
-    display: inline-block; /* Allows the title to be centered within the text-align of the parent */
-    /* ... existing styles ... */
+    position: absolute;
+    left: 50%; /* Or however much space you need to resemble your actual terminal */
+    transform: translateX(-50%); /* Adjust the position accurately */
+    display: inline-block;
+    margin: 0;
+    font-size: 1em; /* Adjust to match your desired size */
+    color: var(--text-color);
+    white-space: nowrap; /* Ensures the text does not wrap */
+    
+   
   }
   
   /* macOS-style control buttons */
+  
   .terminal-controls {
-    position: absolute;
-    top: 50%;
-    left: 20px; /* Adjust to not overlap the text */
-    transform: translateY(-50%);
-    /* ... existing styles ... */
+    display: flex;
+    gap: 8px;
+    margin-right: 16px; /* Space between buttons and title */
   }
   
   /* Ensure list items have enough space and are not cut off */
@@ -94,3 +101,13 @@
     flex-shrink: 0;
   }
   
+  .terminal-header::after {
+    content: '';
+    display: block;
+    height: 2px; /* Height of the line */
+    background-color: var(--green);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px; /* Adjust to place the line right below the header */
+  }
