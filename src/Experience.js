@@ -1,6 +1,6 @@
 import React from 'react';
 import "./styles/Experience.css";
-import himerLogo from "./images/himerlogo.jpeg";
+import himerlogo from "./images/himerlogo.jpeg";
 import codecollablogo from "./images/codecollablogo.png";
 import epicslogo from "./images/epicslogo.jpeg";
 import ASUlogo from './images/ASUlogo.png'; //
@@ -48,29 +48,26 @@ const experiences = [
 function Experience() {
   return (
     <div className="main-container">
-      <h2 className="experience-title">Experience</h2>
-      <div className="content-container">
-        <div className="text-section">
-          {/* Make sure the map function is enclosed in curly braces and the content is rendered inside the text-section */}
-          {experiences.map((exp, index) => (
-            <div key={index} className="experience-entry">
-              <h3>{exp.title}</h3>
-              <time>{exp.period}</time>
-              <ul>
-                {exp.responsibilities.map((item, itemIndex) => (
-                  <li key={itemIndex}><span className="dollar-sign">$</span>{item}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-        <div className="images-section">
-          <img src={himerLogo} alt="Human In Mind Engineering Lab logo" className="image" />
+      <h2 className="experience-title" align="center">Experience</h2>
+      {experiences.map((exp, index) => (
+        <div key={index} className="experience-container">
+          <div className="experience-entry">
+            <h3>{exp.title}</h3>
+            <time>{exp.period}</time>
+            <ul>
+              {exp.responsibilities.map((item, itemIndex) => (
+                <li key={itemIndex}>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="image-container">
+            <img src={himerlogo} alt="Human In Mind Engineering Lab logo" className="image" />
           <img src={codecollablogo} alt="CodeCollab Logo" className="image" />
           <img src={epicslogo} alt="Epics Logo" className="image" />
           <img src={ASUlogo} alt="ASU Logo" className="image" />
+          </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 }
