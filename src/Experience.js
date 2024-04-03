@@ -1,5 +1,9 @@
 import React from 'react';
 import "./styles/Experience.css";
+import himerLogo from "./images/himerlogo.jpeg";
+import codecollablogo from "./images/codecollablogo.png";
+import epicslogo from "./images/epicslogo.jpeg";
+import ASUlogo from './images/ASUlogo.png'; //
 
 const experiences = [
   {
@@ -31,7 +35,7 @@ const experiences = [
   },
   {
     title: 'Undergraduate Teaching Assistant (Arizona State University)',
-    period: 'Jan 2023 - Dec 2023',
+    period: ' 2023 - 2024',
     responsibilities: [
       'Facilitated 10+ monthly sessions, enhancing collaborative learning and understanding of complex coding concepts.',
       'Conducted skill sessions on cloud computing and GitHub, significantly enhancing foundational knowledge and skills for newcomers.',
@@ -40,32 +44,38 @@ const experiences = [
   },
 ];
 
+
 function Experience() {
   return (
-    <div className="experience-section terminal-container">
-      <div className="terminal-header">
-        <div className="terminal-controls">
-          {/* Your button components */}
-          <span className="terminal-button close"></span>
-          <span className="terminal-button minimize"></span>
-          <span className="terminal-button maximize"></span>
+    <div className="main-container">
+      <h2 className="experience-title">Experience</h2>
+      <div className="content-container">
+        <div className="text-section">
+          {/* Make sure the map function is enclosed in curly braces and the content is rendered inside the text-section */}
+          {experiences.map((exp, index) => (
+            <div key={index} className="experience-entry">
+              <h3>{exp.title}</h3>
+              <time>{exp.period}</time>
+              <ul>
+                {exp.responsibilities.map((item, itemIndex) => (
+                  <li key={itemIndex}><span className="dollar-sign">$</span>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
-        <h2 className="terminal-title">Experience</h2>
+        <div className="images-section">
+          <img src={himerLogo} alt="Human In Mind Engineering Lab logo" className="image" />
+          <img src={codecollablogo} alt="CodeCollab Logo" className="image" />
+          <img src={epicslogo} alt="Epics Logo" className="image" />
+          <img src={ASUlogo} alt="ASU Logo" className="image" />
+        </div>
       </div>
-      {experiences.map((exp, index) => (
-        <div key={index} className="experience-entry">
-          <h3>{exp.title}</h3>
-          <time>{exp.period}</time>
-          <ul>
-            {exp.responsibilities.map((item, itemIndex) => (
-              <li key={itemIndex}><span className="dollar-sign">$</span>{item}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
     </div>
   );
 }
+
+
 
 
 export default Experience;

@@ -1,162 +1,43 @@
-/* Terminal container with more width and padding for the text */
-.terminal-container {
-    /* ... existing styles ... */
-    padding: 20px 40px;
-    border: 1px solid var(--green); /* Increase horizontal padding */
-  }
-  
-  /* Header with a pseudo-element to simulate the macOS window controls */
-  .terminal-header {
-    position: relative; /* Keeps children absolutely positioned relative to this container */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px; /* Add padding on the sides if needed */
-    background-color: var(--background-color);
-    top:-30px;
-  }
-  /* Center the title within the header */
-  .terminal-title {
-    position: absolute;
-    left: 50%; /* Or however much space you need to resemble your actual terminal */
-    transform: translateX(-50%); /* Adjust the position accurately */
-    display: inline-block;
-    margin: 0;
-    font-size: 1em; /* Adjust to match your desired size */
-    color: var(--text-color);
-    white-space: nowrap; /* Ensures the text does not wrap */
-    
-   
-  }
-  
-  /* macOS-style control buttons */
-  
-  .terminal-controls {
-    display: flex;
-    gap: 8px;
-    /* Space between buttons and title */
-    position: absolute;
-  top: 50%;
-  left: 20px; /* Adjust this value to place the buttons to the left */
-  transform: translateY(-50%);
-  }
-  
-  /* Ensure list items have enough space and are not cut off */
-  .experience-entry ul {
-    /* ... existing styles ... */
-    margin-right: 40px; /* Prevent text from being cut off */
-  }
-  
-  /* Adjust font size for better readability */
-  .experience-entry, .experience-entry h3, .experience-entry time, .experience-entry ul, .experience-entry li {
-    font-size: 0.85em; /* Smaller font size for all text inside the entry */
-    /* ... existing styles ... */
-  }
-  
-  /* Make sure the header is not overlapping the content */
-  .terminal-container {
-    padding-top: 60px; /* Add top padding to account for the header */
-  }
-  
-
-  .terminal-button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #ff5f56; /* red */
-    flex-shrink: 0;
-  }
-  
-  .terminal-button.minimize {
-    background-color: #ffbd44; /* yellow */
-  }
-  
-  .terminal-button.maximize {
-    background-color: #27c93f; /* green */
-  }
-
-  .terminal-button.close::before {
-    content: '';
-    /* additional styles for pseudo-element, if needed */
-  }
-  
-  .terminal-button.minimize::before {
-    content: '';
-    /* additional styles for pseudo-element, if needed */
-  }
-  
-  .terminal-button.maximize::before {
-    content: '';
-    /* additional styles for pseudo-element, if needed */
-  }
-  .terminal-controls {
-    position: absolute;
-    top: 10px; /* Adjust as necessary */
-    left: 10px; /* Adjust as necessary */
-    display: flex;
-    gap: 8px;
-    /* Ensure children (buttons) are laid out in a row */
-  }
-  
-  /* Individual button styles */
-  .terminal-button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    /* Ensure the buttons do not stretch */
-    flex-shrink: 0;
-  }
-  
-  .terminal-header::after {
-    content: '';
-    display: block;
-    height: 2px; /* Height of the line */
-    background-color: var(--green);
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -10px; /* Adjust to place the line right below the header */
-  }
-
-  .terminal-container ul {
-    list-style: none;
-    padding: 0;
+.main-container {
+  display: flex;
+  flex-direction: column; /* Stack the title and content-container vertically */
+  border: 1px solid var(--green); /* Adjust as necessary */
 }
 
-/* Pink dollar sign for bullets */
-.terminal-container ul li::before {
-    /* content: '$'; */
-    color: var(--pink); /* Replace with your color value */
-    margin-right: 8px;
+.content-container {
+  display: flex; /* Set up flex container for side-by-side layout */
 }
 
-/* Arrow bullets for the responsibilities */
-.terminal-container ul li::before {
-    /* content: '-->'; */
-    color: var(--light-gray); /* Replace with your color value */
-    margin-right: 8px;
-    /* ... */
+.text-section {
+  flex: 1; /* allows this section to grow and take up half the space */
+  padding: 20px; /* Space inside the text section */
 }
 
-.experience-entry {
-  /* ... other styles ... */
+.images-section {
+  flex: 1; /* allows this section to grow and take up the other half */
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  align-items: center;
 }
 
-/* You can adjust font-size and other styles for better alignment */
-.experience-entry h3, .experience-entry time {
-  /* ... */
-  font-size: 0.95em;
+.image {
+  max-width: 100%; /* Image fills its container */
+  height: auto;
+  margin-bottom: 20px; /* Space between images */
+  border-radius: 10px; /* Rounded corners for images */
 }
 
-/* Additional responsive styles if needed */
+/* Adjustments for responsive design */
 @media (max-width: 768px) {
-  /* ... */
-}
-
-.dollar-sign {
-  color: pink; /* Replace with the exact color code you need */
-  margin-right: 5px; /* Adjust spacing as needed */
+  .main-container {
+    flex-direction: column;
+  }
+  
+  .experience-section, .images-section {
+    width: 100%; /* Full width on smaller screens */
+  }
+  
+  .image {
+    max-width: 80px; /* Smaller images on smaller screens */
+  }
 }
