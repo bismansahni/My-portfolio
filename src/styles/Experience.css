@@ -1,43 +1,39 @@
 .main-container {
   display: flex;
-  flex-direction: column; /* Stack the title and content-container vertically */
-  border: 1px solid var(--green); /* Adjust as necessary */
+  border: 1px solid var(--green);
 }
 
 .content-container {
-  display: flex; /* Set up flex container for side-by-side layout */
+  display: flex;
+  width: 100%;
 }
 
 .text-section {
-  flex: 1; /* allows this section to grow and take up half the space */
-  padding: 20px; /* Space inside the text section */
+  flex: 1;
+  padding: 20px;
 }
 
 .images-section {
-  flex: 1; /* allows this section to grow and take up the other half */
+  flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .image {
-  max-width: 100%; /* Image fills its container */
-  height: auto;
-  margin-bottom: 20px; /* Space between images */
-  border-radius: 10px; /* Rounded corners for images */
+  /* Two images per row with a little space in between */
+  margin: 5px;
+  border-radius: 10px;
 }
 
-/* Adjustments for responsive design */
 @media (max-width: 768px) {
-  .main-container {
+  .content-container {
     flex-direction: column;
   }
   
-  .experience-section, .images-section {
-    width: 100%; /* Full width on smaller screens */
-  }
-  
   .image {
-    max-width: 80px; /* Smaller images on smaller screens */
+    width: 100%; /* Full width for smaller screens */
+    margin-bottom: 20px;
   }
 }
