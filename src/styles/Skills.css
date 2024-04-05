@@ -1,0 +1,34 @@
+/* skills.css */
+
+.skills-section {
+    background-color: var(--background-color);
+    padding: 50px 0;
+  }
+  
+  .skills-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill-card {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+   
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .skill-icon {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+  }
+  

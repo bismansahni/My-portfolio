@@ -1,4 +1,5 @@
-import React from 'react';
+// skills.js
+
 import awsLogo from './images/awslogo.png';
 import sqllogo from './images/sqllogo.png';
 import mongologo from './images/mongologo.png';
@@ -6,7 +7,7 @@ import pythonlogo from './images/pythonlogo.png';
 import javalogo from './images/javalogo.png';
 import clogo from './images/clogo.png';
 import unitylogo from './images/unitylogo.png';
-
+import "./styles/Skills.css";
 
 function Skills() {
     return (
@@ -30,12 +31,11 @@ function Skills() {
                     <img src={javalogo} alt="Java" className="skill-icon" />
                 </div>
                 <div className="skill-card">
-                    <img src={clogo} alt="C Language" className="skill-icon" />
+                    <img src={clogo} alt="C" className="skill-icon" />
                 </div>
                 <div className="skill-card">
                     <img src={unitylogo} alt="Unity" className="skill-icon" />
                 </div>
-                {/* Add more skill-cards as needed */}
             </div>
         </div>
     );

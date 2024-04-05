@@ -165,37 +165,11 @@ html {
   /* ... */
 }
 
-.experience-entry h3, .experience-entry time, .experience-entry ul {
-  font-size: 1em; /* Smaller, more readable font size */
-  line-height: 1.5; /* Space out lines for readability */
-}
-
-.experience-entry h3 {
-  margin-top: 0;
-  margin-bottom: 0.5em; /* Space between title and content */
-}
-
-.experience-entry time {
-  font-size: 0.85em; /* Smaller font size for dates */
-  margin-bottom: 1em; /* Space between date and responsibilities */
-}
-
-.experience-entry ul {
-  padding-left: 1.5em; /* Indent for bullet points */
-}
-
-.terminal-title {
-  font-size: 1.2em; /* Ensures title is readable but not too large */
-  /* Remove transform and absolute positioning if it disrupts the layout */
-}
 
 /* Add media query for smaller screens to adjust font sizes */
 @media (max-width: 768px) {
   .experience-entry h3, .experience-entry time, .experience-entry ul {
     font-size: 0.9em; /* Slightly smaller font sizes on mobile */
   }
-
-  .terminal-title {
-    font-size: 1em; /* Adjust title size for mobile */
-  }
 }
+
