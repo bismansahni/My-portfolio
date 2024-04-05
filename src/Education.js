@@ -1,5 +1,6 @@
-import React from 'react';
-import "./App.css";
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:2387748752.
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:3151665673.
+import "./styles/Education.css";
 import ASUlogo from './images/ASUlogo.png'; // Ensure the path to your image is correct
 
 const Education = () => {

@@ -1,0 +1,48 @@
+/* Education section container */
+.education-section {
+    /* ... existing styles ... */
+    padding: 20px; /* Reduce horizontal padding */
+    border: 1px solid var(--green); /* Add border */
+  }
+  
+  /* Education entry container */
+  .education-entry {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Add spacing between elements */
+    padding: 10px; /* Add padding */
+    background-color: var(--background-color);
+  }
+  
+  /* Education image */
+  .education-image {
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    object-fit: contain; /* Ensure image is contained within its container */
+    align-self: center; /* Center the image horizontally */
+  }
+  
+  /* Education information container */
+  .education-info {
+    flex-grow: 1; /* Allow the information container to grow to fill available space */
+  }
+  
+  /* Education degree and year */
+  .education-degree,
+  .education-year {
+    font-size: 1.2em; /* Adjust font size as needed */
+    margin-bottom: 5px; /* Add spacing between degree and year */
+  }
+  
+  /* Education details list */
+  .education-details {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default list padding */
+  }
+  
+  /* Education details list items */
+  .education-details li {
+    font-size: 1em; /* Adjust font size as needed */
+    margin-bottom: 5px; /* Add spacing between list items */
+  }
+  
