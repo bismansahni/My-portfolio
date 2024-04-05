@@ -5,6 +5,9 @@
     padding: 50px 0;
     border: 1px solid var(--green);
     margin-bottom: 20%;
+    font-size: 20px;
+    width: 100%;
+  max-width: 1200px;
   }
   
   .skills-title {

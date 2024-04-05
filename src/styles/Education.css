@@ -3,6 +3,7 @@
     /* ... existing styles ... */
     padding: 20px; /* Reduce horizontal padding */
     border: 1px solid var(--green); /* Add border */
+    font-size: 20px;
   }
   
   /* Education entry container */
