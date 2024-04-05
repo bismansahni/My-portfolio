@@ -82,16 +82,15 @@ html {
 }
 
 .education-section, .experience-section, .projects-section, .skills-section {
-  margin: 20px;
+
   padding: 20px;
   background-color: var(--light-gray);
   color: var(--bright-orange); /* Adjusted for visibility */
-  border-radius: 10px; /* Consistency in card design */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+ /* Subtle shadow for depth */
 }
 
 .education-entry, .experience-entry, .project-card, .skill-card {
-  margin-bottom: 20px;
+ 
   display: flex;
   align-items: center;
   gap: 20px;
@@ -132,9 +131,7 @@ html {
 
 /* Other specific project, skill, education, and experience styles remain as previously defined */
 
-.skills-section {
-  /* Other styles remain the same */
-}
+
 
 .skills-container {
   display: flex;
@@ -146,11 +143,7 @@ html {
   margin: 0 auto; /* Centers the container if it's not as wide as the parent */
 }
 
-.skill-card {
-  /* Flex item alignment and sizing styles remain the same */
-  /* Adjust margins if needed */
-  margin: 10px; /* Adds a little space around each card */
-}
+
 
 /* Additional responsive styling if needed */
 @media (max-width: 768px) {
@@ -160,10 +153,6 @@ html {
 }
 
 
-.terminal-container {
-  padding: 1.5em; /* Responsive padding */
-  /* ... */
-}
 
 
 /* Add media query for smaller screens to adjust font sizes */
