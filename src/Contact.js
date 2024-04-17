@@ -5,21 +5,40 @@ import { send } from 'emailjs-com';
 const Contact = () => {
   const [toSend, setToSend] = useState({
     from_name: '',
-    to_name: 'Your Name',
     subject: '',
     message: '',
     reply_to: '',
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState('');
+
   const onSubmit = (e) => {
     e.preventDefault();
-    send('service_id', 'template_id', toSend, 'user_id')
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-      })
-      .catch((err) => {
-        console.log('FAILED...', err);
+    setIsSubmitting(true);
+    send(
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,  // Use environment variable for EmailJS service ID
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID, // Use environment variable for EmailJS template ID
+      toSend,
+      process.env.REACT_APP_EMAILJS_USER_ID      // Use environment variable for EmailJS user ID
+    )
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      setMessage('Your message has been sent successfully.');
+      setIsSubmitting(false);
+      // Reset form if needed
+      setToSend({
+        from_name: '',
+        subject: '',
+        message: '',
+        reply_to: '',
       });
+    })
+    .catch((err) => {
+      console.log('FAILED...', err);
+      setMessage('Failed to send the message. Please try again later.');
+      setIsSubmitting(false);
+    });
   };
 
   const handleChange = (e) => {
@@ -28,7 +47,6 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
-      {/* Contact title */}
       <h2 className="contact-title">Contact me</h2>
       <form onSubmit={onSubmit} className="contact-form">
         <label>Name:</label>
@@ -62,8 +80,12 @@ const Contact = () => {
           onChange={handleChange}
           className="contact-textarea"
         />
-        <button type="submit" className="contact-button">Send</button>
+        <button type="submit" className="contact-button" disabled={isSubmitting}>
+          Send
+        </button>
       </form>
+      {/* Display submission message */}
+      {message && <div className="submission-message">{message}</div>}
     </div>
   );
 };

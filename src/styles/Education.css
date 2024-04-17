@@ -3,7 +3,7 @@
   text-align: center;
     /* ... existing styles ... */
     padding: 20px; /* Reduce horizontal padding */
-    border: 1px solid var(--green); /* Add border */
+    border: 4px solid var(--green); /* Add border */
     font-size: 20px;
   }
   
