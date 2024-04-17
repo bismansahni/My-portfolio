@@ -7,6 +7,7 @@ import Education from './Education';
 import Projects from './Project'; // Make sure the import matches the file name
 import Experience from './Experience';
 import Resume from './Resume';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <div id="projects"><Projects /></div> {/* Here is the projects section */}
         {/* You can add more sections as needed */}
         <div id="resume"><Resume /></div>
+        <div id="contact"> <Contact/></div>
       </header>
     </div>
   );
