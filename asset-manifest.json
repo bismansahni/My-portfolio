@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.90a18f44.css",
-    "main.js": "/my-website/static/js/main.ccb31b3b.js",
+    "main.css": "/my-website/static/css/main.733996a9.css",
+    "main.js": "/my-website/static/js/main.561429b6.js",
     "static/js/453.e0130567.chunk.js": "/my-website/static/js/453.e0130567.chunk.js",
+    "static/media/bismanphoto.png": "/my-website/static/media/bismanphoto.e5025c4753b412a734b9.png",
     "static/media/epicslogo.jpeg": "/my-website/static/media/epicslogo.9e12f65c39cf5e4fc588.jpeg",
     "static/media/codecollablogo.png": "/my-website/static/media/codecollablogo.a3b5ed98fafeedea7f0e.png",
     "static/media/pythonlogo.png": "/my-website/static/media/pythonlogo.dea924d737bb84eb9ce3.png",
     "static/media/sqllogo.png": "/my-website/static/media/sqllogo.85fb38d6773862e917f4.png",
-    "static/media/bismanphoto.jpg": "/my-website/static/media/bismanphoto.495054bd64766b38a614.jpg",
     "static/media/mongologo.png": "/my-website/static/media/mongologo.e42d28391597ae82e2ca.png",
     "static/media/javalogo.png": "/my-website/static/media/javalogo.6c1a3b5f7e2d535bff5b.png",
     "static/media/himerlogo.jpeg": "/my-website/static/media/himerlogo.6b18870eb6b56ee9d913.jpeg",
@@ -15,12 +15,12 @@
     "static/media/unitylogo.png": "/my-website/static/media/unitylogo.701e411314747beebeb3.png",
     "static/media/clogo.png": "/my-website/static/media/clogo.bbbbbabc8c191bfb99bf.png",
     "index.html": "/my-website/index.html",
-    "main.90a18f44.css.map": "/my-website/static/css/main.90a18f44.css.map",
-    "main.ccb31b3b.js.map": "/my-website/static/js/main.ccb31b3b.js.map",
+    "main.733996a9.css.map": "/my-website/static/css/main.733996a9.css.map",
+    "main.561429b6.js.map": "/my-website/static/js/main.561429b6.js.map",
     "453.e0130567.chunk.js.map": "/my-website/static/js/453.e0130567.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90a18f44.css",
-    "static/js/main.ccb31b3b.js"
+    "static/css/main.733996a9.css",
+    "static/js/main.561429b6.js"
   ]
 }
