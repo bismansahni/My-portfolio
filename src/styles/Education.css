@@ -1,5 +1,6 @@
 /* Education section container */
 .education-section {
+  text-align: center;
     /* ... existing styles ... */
     padding: 20px; /* Reduce horizontal padding */
     border: 1px solid var(--green); /* Add border */
