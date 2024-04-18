@@ -11,10 +11,10 @@ const Education = () => {
         <img src={ASUlogo} alt="ASU Campus" className="education-image" />
         <div className="education-info">
           <h3>Arizona State University</h3>
-          <p className="education-degree">Bachelor of Science in Computer Science</p>
-          <p className="education-year">2019 - 2023</p>
+          <p className="education-degree">Bachelor of Science in Computer Science (Honors)</p>
+          <p className="education-year">2022 - 2025 (Expected)</p>
           <ul className="education-details">
-            <li>Graduated with Honors (GPA: 3.9/4.0)</li>
+            <li>GPA: 3.9/4.0</li>
             <li>Relevant coursework: Data Structures, Algorithms, Web Development, Machine Learning</li>
           </ul>
         </div>
