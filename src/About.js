@@ -11,6 +11,7 @@ function About() {
   return (
     <div className="about-container">
       <div className="about-content">
+        
         <img src={bismanphoto} alt="Bisman Sahni" className="about-photo" />
         <div className="about-text">
           <h1>Hey, I am Bisman!</h1>

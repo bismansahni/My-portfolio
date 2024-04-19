@@ -17,8 +17,8 @@
 
 .about-photo {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 40%;
+
   margin-right: 50px;
 }
 
@@ -33,7 +33,7 @@ h1 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 0.75em;
   line-height: 1.5;
 }
 
@@ -46,9 +46,12 @@ p {
 
 .social-icons a {
   margin: 10px;
+  
 }
 
 .social-icons img {
-  width: 40px; /* Adjust size as needed */
-  height: 40px; /* Adjust size as needed */
+  
+ 
+  width: 60px; /* Adjust size as needed */
+   /* Adjust size as needed */
 }
