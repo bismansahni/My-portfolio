@@ -30,7 +30,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-container">
-        <a href="/" className="nav-link" style={{ color: '#16f2b3', fontSize: '24px' }}>
+        <a href="#about" className="nav-link"  style={{ color: '#16f2b3', fontSize: '24px' }}>
           Bisman Sahni
         </a>
         <div>
