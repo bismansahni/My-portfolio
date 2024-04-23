@@ -10,14 +10,17 @@
 }
 
 .projects-section {
+  text-align: center;
   padding: var(--project-section-padding);
   border: var(--project-section-border);
-  font-size: 20px;
-  margin-top:8% ;
   width: 100%;
-  max-width: 60%;
-  margin-left:20%;
-  text-align: center;
+  max-width: 60%; /* Set to the same max-width for both */
+  margin-left: 19%; /* Uniform margin-left */
+  margin-top: 2%; /* Uniform margin-top */
+  margin-bottom: 5%; /* Uniform margin-bottom */
+  padding: 20px; /* Set uniform padding */
+  border: 4px solid var(--green); /* Uniform border style */
+  font-size: 20px; /* Unif
 }
 
 .projects-container {
