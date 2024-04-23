@@ -1,41 +1,37 @@
 .contact-page {
     width: 100%;
-    max-width: 80%; /* Matching the max-width of .experience-container */
-    margin: 0 auto; /* Centering the box horizontally */
-    padding: 20px; /* Consistent padding with other containers */
-    border: 4px solid var(--green); /* Keeping border style consistent */
-    font-size: 20px; /* Keeping font size consistent */
-    box-sizing: border-box; /* Ensures padding and border are included in width */
-    margin-bottom: 20px; /* Space after the container */
-    margin-top: 20%; /* Space before the container */
-    display: flex; /* Adding flex display */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center children horizontally */
-    justify-content: space-between; /* Distribute space evenly vertically */
-}
-
-.contact-title {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.contact-form input,
-.contact-form textarea,
-.contact-input, /* Adding specific styles for contact-input */
-.contact-textarea { /* Adding specific styles for contact-textarea */
-    width: calc(100% - 22px); /* Full width minus padding */
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    max-width: 60%; /* Set max-width to match other containers */
+    margin: 2% auto 5%; /* Adjusted top and bottom margins for consistency */
+    padding: 20px;
+    border: 4px solid var(--green);
+    font-size: 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.contact-form textarea,
-.contact-textarea { /* Specific styles for textareas */
-    height: auto;
+.contact-form {
+    display: flex; /* Using flexbox to align form sections side by side */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    width: 100%; /* Full width of the parent container */
+}
+
+.contact-form .form-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Adjusted to take up appropriate space of the form on larger screens */
+    min-width: 250px; /* Ensures columns don't get too narrow */
+    margin-right: 20px; /* Spacing between columns */
+}
+
+.contact-form .form-column:last-child {
+    margin-right: 0; /* Removes margin from the last column */
+}
+
+.contact-form textarea {
+    height: 150px; /* Updated height for the textarea */
     resize: vertical;
 }
 
@@ -44,38 +40,32 @@
     margin-bottom: 5px;
 }
 
-.contact-form button,
-.contact-button { /* Adding specific styles for contact-button */
-    width: auto;
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer; /* Changes the mouse cursor on hover */
-    background-color: var(--button-bg-color); /* Replace with your variable or color */
-    color: white; /* Text color for the button */
-    border: none; /* Removes the default border */
-    border-radius: 5px; /* Rounded corners for the button */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
-
-.contact-form button:hover,
-.contact-button:hover { /* Hover effect for buttons */
-    background-color: var(--button-hover-bg-color); /* Darker shade for hover, replace with your color variable */
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus,
-.contact-input:focus, /* Focus styles for .contact-input */
-.contact-textarea:focus { /* Focus styles for .contact-textarea */
-    outline: none;
-    border-color: #006400;
-    box-shadow: 0 0 0 2px rgba(0, 100, 0, 0.2);
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 40px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 @media (max-width: 768px) {
     .contact-page {
-        margin: 10px auto; /* Smaller margin on smaller screens */
-        padding: 10px; /* Adjust padding on smaller screens */
         max-width: 100%; /* Full width on smaller devices */
+        margin: 10px auto; /* Reduced margin on smaller screens */
+        padding: 10px; /* Adjusted padding on smaller screens */
     }
-    /* Add responsive adjustments for inputs and button if necessary */
+
+    .contact-form {
+        flex-direction: column; /* Stack the columns vertically on small screens */
+    }
+
+    .contact-form .form-column {
+        margin-right: 0; /* Remove right margin on small screens */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: calc(100% - 20px); /* Adjusting width on smaller screens */
+    }
 }

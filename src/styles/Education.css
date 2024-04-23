@@ -28,7 +28,9 @@
     width: 100px; /* Adjust width as needed */
     height: 100px; /* Adjust height as needed */
     object-fit: contain; /* Ensure image is contained within its container */
-    align-self: center; /* Center the image horizontally */
+    align-self: center; 
+    
+    transition: transform 0.3s ease;/* Center the image horizontally */
   }
   
   /* Education information container */
@@ -55,3 +57,11 @@
     margin-bottom: 5px; /* Add spacing between list items */
   }
   
+  /* Education image */
+  .education-image:hover {
+    cursor: pointer;
+  box-shadow: 0 6px 12px 0 pink;
+  transform: translateY(-5px);
+    
+     /* Center the image horizontally */
+  }

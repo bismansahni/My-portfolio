@@ -87,6 +87,11 @@ const Contact = () => {
       {/* Display submission message */}
       {message && <div className="submission-message">{message}</div>}
     </div>
+
+
+
+
+
   );
 };
 
