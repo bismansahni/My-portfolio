@@ -86,7 +86,10 @@ const Contact = () => {
       </form>
       {/* Display submission message */}
       {message && <div className="submission-message">{message}</div>}
+<p> Or email me at <a href="mailto:bismansahni@outlook.com">bismansahni@outlook.com</a></p>
+
     </div>
+
 
 
 

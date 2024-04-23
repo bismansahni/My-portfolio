@@ -13,7 +13,7 @@
 }
 
 /* Apply base styles for body to inherit in all components */
-body, .education-section, .experience-section, .projects-section, .skills-section {
+body, .education-section, .experience-section, .projects-section, .skills-section .contact-section {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--font-secondary);

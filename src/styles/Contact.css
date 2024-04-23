@@ -12,6 +12,7 @@
     justify-content: space-between;
 }
 
+
 .contact-form {
     display: flex; /* Using flexbox to align form sections side by side */
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
@@ -49,6 +50,37 @@
     border-radius: 5px;
 }
 
+.contact-button {
+    padding: 15px 30px; /* Increase padding for a larger button */
+    background-color: var(--background-color); /* Use your theme's button color */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block; /* White text color */
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Calibri';
+    border:none ;
+    border-radius: 15px;
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+    transition: --black 0.3s ease, transform 0.2s ease;
+    margin-top:2%;
+    margin-left:38%;
+    background-color: var(--green);
+    font-family: var(--font-primary);  /* Smooth background color transition and transform */
+}
+
+.contact-button:hover, .contact-button:focus {
+    background-color: var(--green); /* Slightly darker shade on hover/focus */
+    transform: translateY(-2px);
+    color: black;
+    font-weight: bold; /* Slight raise effect on hover/focus */
+}
+
+
+
+
 @media (max-width: 768px) {
     .contact-page {
         max-width: 100%; /* Full width on smaller devices */
@@ -57,7 +89,8 @@
     }
 
     .contact-form {
-        flex-direction: column; /* Stack the columns vertically on small screens */
+        flex-direction: column;
+        font-family: var(--font-primary);  /* Stack the columns vertically on small screens */
     }
 
     .contact-form .form-column {
