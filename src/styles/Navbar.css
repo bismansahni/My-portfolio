@@ -6,7 +6,7 @@
   
   .nav-link:hover {
     color: #16f2b3; /* Highlight color */
-    font-size: 18px; /* Increased font size on hover */
+    font-size: 23px; /* Increased font size on hover */
   }
   
   .nav-container > div > a {
