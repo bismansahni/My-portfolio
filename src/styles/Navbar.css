@@ -1,0 +1,15 @@
+.nav-link {
+    color: #fff; /* Default color */
+    font-size: 16px; /* Default font size */
+    transition: color 0.3s ease, font-size 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #16f2b3; /* Highlight color */
+    font-size: 18px; /* Increased font size on hover */
+  }
+  
+  .nav-container > div > a {
+    margin-right: 20px; /* Space between nav items */
+  }
+  
