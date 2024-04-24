@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/my-website/static/css/main.a9d617e3.css",
-    "main.js": "/my-website/static/js/main.425c753b.js",
+    "main.css": "/my-website/static/css/main.a6d6241c.css",
+    "main.js": "/my-website/static/js/main.46f10f5a.js",
     "static/js/453.e0130567.chunk.js": "/my-website/static/js/453.e0130567.chunk.js",
     "static/media/bismanphoto.webp": "/my-website/static/media/bismanphoto.2b72abdcf742c3cf500e.webp",
     "static/media/epicslogo.jpeg": "/my-website/static/media/epicslogo.9e12f65c39cf5e4fc588.jpeg",
     "static/media/codecollablogo.png": "/my-website/static/media/codecollablogo.a3b5ed98fafeedea7f0e.png",
     "static/media/pythonlogo.png": "/my-website/static/media/pythonlogo.dea924d737bb84eb9ce3.png",
-    "static/media/sqllogo.png": "/my-website/static/media/sqllogo.85fb38d6773862e917f4.png",
-    "static/media/mongologo.png": "/my-website/static/media/mongologo.e42d28391597ae82e2ca.png",
-    "static/media/javalogo.png": "/my-website/static/media/javalogo.6c1a3b5f7e2d535bff5b.png",
+    "static/media/sqllogo.webp": "/my-website/static/media/sqllogo.114ecdbc44d6299c26a5.webp",
+    "static/media/awslogo.webp": "/my-website/static/media/awslogo.2c6b3bca3639e6ac728c.webp",
+    "static/media/mongologo.webp": "/my-website/static/media/mongologo.b22a9841c2a4541c7f11.webp",
     "static/media/himerlogo.jpeg": "/my-website/static/media/himerlogo.6b18870eb6b56ee9d913.jpeg",
-    "static/media/awslogo.png": "/my-website/static/media/awslogo.316da603b6d42393e022.png",
-    "static/media/unitylogo.png": "/my-website/static/media/unitylogo.701e411314747beebeb3.png",
+    "static/media/javalogo.webp": "/my-website/static/media/javalogo.91c28501104b73f77002.webp",
     "static/media/clogo.png": "/my-website/static/media/clogo.bbbbbabc8c191bfb99bf.png",
-    "static/media/linkedin.png": "/my-website/static/media/linkedin.270270401c14107a7d77.png",
+    "static/media/unitylogo.webp": "/my-website/static/media/unitylogo.dfe44a891c7f1b799cac.webp",
+    "static/media/linkedin.webp": "/my-website/static/media/linkedin.1806cd50bfcbf454c95d.webp",
     "static/media/github.svg": "/my-website/static/media/github.e35c71752b296aa276f44b3be062ef25.svg",
     "index.html": "/my-website/index.html",
-    "main.a9d617e3.css.map": "/my-website/static/css/main.a9d617e3.css.map",
-    "main.425c753b.js.map": "/my-website/static/js/main.425c753b.js.map",
+    "main.a6d6241c.css.map": "/my-website/static/css/main.a6d6241c.css.map",
+    "main.46f10f5a.js.map": "/my-website/static/js/main.46f10f5a.js.map",
     "453.e0130567.chunk.js.map": "/my-website/static/js/453.e0130567.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9d617e3.css",
-    "static/js/main.425c753b.js"
+    "static/css/main.a6d6241c.css",
+    "static/js/main.46f10f5a.js"
   ]
 }
