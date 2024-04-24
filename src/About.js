@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import bismanphoto from './images/bismanphoto.webp';
 import githubIcon from './images/github.svg';
-import linkedInIcon from './images/linkedin.png';
+import linkedInIcon from './images/linkedin.webp';
 import './styles/About.css';
 
 function About() {

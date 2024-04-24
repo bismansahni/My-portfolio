@@ -1,12 +1,12 @@
 // skills.js
 
-import awsLogo from './images/awslogo.png';
-import sqllogo from './images/sqllogo.png';
-import mongologo from './images/mongologo.png';
+import awsLogo from './images/awslogo.webp';
+import sqllogo from './images/sqllogo.webp';
+import mongologo from './images/mongologo.webp';
 import pythonlogo from './images/pythonlogo.png';
-import javalogo from './images/javalogo.png';
+import javalogo from './images/javalogo.webp';
 import clogo from './images/clogo.png';
-import unitylogo from './images/unitylogo.png';
+import unitylogo from './images/unitylogo.webp';
 import "./styles/Skills.css";
 
 function Skills() {
